@@ -15,7 +15,7 @@ function checkAnswer() {
     const correctAnswer = "love2024";
 
     if (userInput === correctAnswer) {
-        window.location.href = "success.html";
+        window.location.href = "success_1.html";
     } else {
         document.getElementById("error").textContent = "答錯囉，再想想！";
     }
