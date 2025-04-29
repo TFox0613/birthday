@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>歡迎開始挑戰</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <!-- 背景影片 -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="static/coastal-moewalls-com.mp4" type="video/mp4">
+    </video>
+
+    <!-- 四角圖片 + 右下角影片 -->
+    <img src="static/1.jpg" class="corner top-left">
+    <img src="static/2.jpg" class="corner top-right">
+    <img src="static/3.jpg" class="corner bottom-left">
+    <img src="static/7.jpg" style="display: block; margin: 20px auto;" width="10">
+    <video autoplay muted loop playsinline class="corner bottom-right-video">
+        <source src="static/4.mp4" type="video/mp4">
+    </video>
+
+    <!-- 飄動愛心 -->
+    <div id="hearts"></div>
+
+    <!-- 中央文字 -->
+    <div class="container">
+        <h2>🎀 親愛的禎禎 🎀</h2>
+        <p>恭喜你親愛的禎禎，沒想到你能成功解開帷幕的秘密！</p>
+        <p>接下來留給你的將是無止境的考驗。</p>
+        <p>I didn't expect you to successfully uncover the secret behind the curtain.</p>
+        <p>What lies ahead for you will be endless challenges.</p>
+        <p>Fighting, my beloved!!</p>
+        <p style="margin-top: 20px; font-weight: bold;">— 怪盜瑋瑋</p>
+
+        <a href="puzzle1.html"><button>開始挑戰！</button></a>
+    </div>
+
+    <script src="base.js"></script>
+</body>
+</html>
