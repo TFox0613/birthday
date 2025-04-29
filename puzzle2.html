@@ -1,20 +1,56 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>第一關</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <!-- 背景影片 -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="static/coastal-moewalls-com.mp4" type="video/mp4">
+    </video>
 
-{% block title %}第一關{% endblock %}
+    <!-- 四角拼貼圖片 + 右下角影片 -->
+    <img src="static/1.jpg" class="corner top-left">
+    <img src="static/2.jpg" class="corner top-right">
+    <img src="static/3.jpg" class="corner bottom-left">
+    <video autoplay muted loop playsinline class="corner bottom-right-video">
+        <source src="static/4.mp4" type="video/mp4">
+    </video>
 
-{% block content %}
-<div class="container">
-    <h2>🎃第一關謎題🎃</h2>
-    <p>提示：是我們的密語 + 今年的年份</p>
-    {% if error %}
-        <p style="color: red;">{{ error }}</p>
-    {% endif %}
-    <form method="post">
-        <input type="text" name="answer" placeholder="輸入你的答案">
+    <!-- 飄動愛心 -->
+    <div id="hearts"></div>
+
+    <div class="container">
+        <h2>👑 第一關謎題 👑</h2>
+
+        <p>在月色如洗的夜晚，禎禎偵探悄然潛入一座古老城堡。<br>
+        傳說中的怪盜瑋瑋，竟然在這裡現身，並留下了挑釁的訊息！</p>
+
+        <p>他沒有直接現身，卻留下了一頂金光閃閃的皇冠，<br>
+        彷彿在說：「妳是本月的主角，那麼我就為妳獻上一份王者的試煉。」</p>
+
+        <p>禎禎掃視四周——沒有腳印，沒有破壞，只有那幅奇異的畫作與一串莫名的字母：</p>
+
+        <h3 style="letter-spacing: 5px; font-size: 24px; color: #d81b60;">OHZMN</h3>
+
+        <p>「這不只是裝飾……這是線索！」她喃喃說道。</p>
+
+        <p><em>據說，怪盜瑋瑋在逃離現場時留下一句話：</em><br>
+        <strong>“想找到我？那就先往前看吧!!。”</strong></p>
+
+        <p>現在，禎禎需要破解這串字母的秘密，才能追上那名留下一路謎題與驚喜的怪盜——
+        在他再次消失在夜色之前！</p>
+
+
+        <p id="error" style="color:red;"></p>
+        <input type="text" id="answer" placeholder="輸入你的答案">
         <br><br>
-        <button type="submit">送出</button>
-    </form>
+        <button onclick="checkAnswer()">送出</button>
+        <img src="static/2_piano.jpg" style="position:absolute; bottom:10px; right:-50px; width:80px; transform:rotate(10deg);">
+    </div>
 
-    <img src="{{ url_for('static', filename='5.jpg') }}" style="position:absolute; bottom:10px; right:-50px; width:80px; transform:rotate(10deg);">
-</div>
-{% endblock %}
+    <script src="base.js"></script>
+</body>
+</html>
