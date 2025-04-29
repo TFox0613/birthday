@@ -42,7 +42,7 @@ body {
 }
 
 .top-left     { top: 50px;  left: 40px;  transform: rotate(-25deg); }
-.top-right    { top: 30px;  right: 20px; transform: rotate(25deg); }
+.top-right    { top: 30px;  right: 30px; transform: rotate(25deg); }
 .bottom-left  { bottom: 20px; left: 40px; transform: rotate(25deg); }
 
 /* 右下角小影片 */
