@@ -12,7 +12,7 @@ setInterval(createHeart, 500);
 // 謎題驗證邏輯
 function checkAnswer() {
     const userInput = document.getElementById("answer").value.trim().toLowerCase();
-    const correctAnswer = "love2024";
+    const correctAnswer = "MILOFE";
 
     if (userInput === correctAnswer) {
         window.location.href = "success_1.html";
