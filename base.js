@@ -12,7 +12,7 @@ setInterval(createHeart, 500);
 // 謎題驗證邏輯
 function checkAnswer() {
     const userInput = document.getElementById("answer").value.trim().toLowerCase();
-    const correctAnswer = "M";
+    const correctAnswer = "milofe";
 
     if (userInput === correctAnswer) {
         window.location.href = "success_1.html";
