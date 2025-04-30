@@ -15,13 +15,14 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* 真正居中 */
-    width: 300px;        /* 可依需要調整大小 */
+    transform: translate(-50%, -50%);
+    width: 400px;          /* 你要的大小可調 */
     height: auto;
     opacity: 1;
-    z-index: 1;           /* 高於背景但低於主要內容 */
-    border-radius: 15px;  /* 加點圓角更有質感 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 0;             /* 背景層：要低於 container、愛心等 */
+    pointer-events: none;  /* 不要干擾點擊行為 */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 body {
