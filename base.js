@@ -17,6 +17,6 @@ function checkAnswer() {
     if (userInput === correctAnswer) {
         window.location.href = "success_1.html";
     } else {
-        document.getElementById("error").textContent = "答錯囉，再想想！";
+        document.getElementById("error").textContent = "答錯囉，加油小寶寶！";
     }
 }
