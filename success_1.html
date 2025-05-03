@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <video id="bbgVideo" playsinline controls>
-        <source src="static/CONAN.mp4" type="video/mp4">
+    <video autoplay muted loop id="bgVideo">
+        <source src="static/BG_gif.gif" type="video/mp4">
     </video>
     <audio id="bgMusic" loop>
         <source src="static/conan.mp3" type="audio/mpeg">
@@ -27,17 +27,9 @@
         <p>這是送給你的小禮物～</p>
         <img src="static/10.jpg" style="display: block; margin: 20px auto;" width="200">
         <br>
-        <!-- <a href="puzzle1.html"><button>下一關😉</button></a> -->
+        <a href="index.html"><button>愛你有小寶寶😉</button></a>
     </div>
 
     <script src="base.js"></script>
-    <!-- <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const music = document.getElementById('bgMusic');
-            document.body.addEventListener('click', () => {
-                music.play().catch(err => console.log("音樂播放失敗：", err));
-            }, { once: true });
-        });
-    </script> -->
 </body>
 </html>
